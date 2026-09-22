@@ -1,0 +1,25 @@
+{
+  "name": "firsthand-ssr",
+  "private": true,
+  "type": "module",
+  "description": "A small reading list, rendered on a server and adopted by the browser.",
+  "scripts": {
+    "dev": "node server/main.mjs",
+    "build": "vite build --outDir dist/client && vite build --ssr src/app/entry-server.tsx --outDir dist/server",
+    "start": "NODE_ENV=production node server/main.mjs",
+    "check": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@firsthandjs/data": "^0.9.1",
+    "@firsthandjs/dom": "^0.9.1",
+    "@firsthandjs/server": "^0.9.1"
+  },
+  "devDependencies": {
+    "@firsthandjs/compiler": "^0.9.1",
+    "@firsthandjs/jsx-runtime": "^0.9.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9",
+    "vitest": "^4.1.11"
+  }
+}
