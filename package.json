@@ -11,13 +11,14 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@firsthandjs/data": "^0.11.1",
-    "@firsthandjs/dom": "^0.11.1",
-    "@firsthandjs/server": "^0.11.1"
+    "@firsthandjs/data": "^0.12.0",
+    "@firsthandjs/dom": "^0.12.0",
+    "@firsthandjs/server": "^0.12.0"
   },
   "devDependencies": {
-    "@firsthandjs/compiler": "^0.11.1",
-    "@firsthandjs/jsx-runtime": "^0.11.1",
+    "@firsthandjs/compiler": "^0.12.0",
+    "@firsthandjs/jsx-runtime": "^0.12.0",
+    "@types/node": "^26.6.2",
     "typescript": "^5.9.3",
     "vite": "^7.1.9",
     "vitest": "^4.1.11"
